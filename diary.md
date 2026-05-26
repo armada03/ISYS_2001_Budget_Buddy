@@ -147,6 +147,46 @@ AI helped me plan a tab-based Gradio interface so each feature could be tested s
 
 After implementing the UI, I tested each tab to check that the separate Python functions worked together in one application. I also used AI to debug a Gradio launch issue and confirm that the app could run in Google Colab using a public Gradio link. I learned that building the functions first made the UI easier to connect, because each tab could call an existing tested function instead of mixing all the logic into the interface code.
 
+## Entry 7.1 – Gradio UI Design and Debugging
+
+**Artifact:**
+
+![Gradio Debugging Evidence](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_Debugging.png)
+
+![Gradio Debugging Evidence 2](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_Debugging%202.png)
+
+![Gradio Reinstall Fix](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_Reinstall_Fix.png)
+
+**Context:**  
+I used AI to help design and debug a Gradio interface that connects all Budget Buddy features into one application.
+
+**Reflection:**  
+AI helped me plan a beginner-friendly tab-based Gradio interface for Budget Buddy. The design separated the assistant into four main tabs: CSV Spending Analysis, Finance Chatbot, RAG Financial Guidance, and Savings Goal Calculator. I chose this structure because it makes each required project component easy for a marker to test separately.
+
+During implementation, I encountered a Gradio error: `AttributeError: module 'gradio' has no attribute 'blocks'`. The Gradio app still partially worked, but the notebook showed error output and the CSV upload feature also needed debugging. I used AI to understand that the issue was likely related to the Gradio package/version environment rather than my Budget Buddy logic. The fix was to add a force reinstall cell for Gradio, restart the runtime, and rerun the notebook.
+
+This debugging process taught me that external libraries can behave differently in Google Colab depending on the installed version. I also learned that final testing should include restarting the runtime and rerunning the notebook from the top to make sure old errors are removed and the app works cleanly.
+
+## Entry 7.3 – Gradio FIX and output
+
+**Artifact:**
+
+![Gradio Output](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_Output.png)
+
+![Gradio Output 2](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_Output_2.png)
+
+![Gradio Output 3](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_Output_3.png)
+
+**Context:**  
+I used AI to help design, debug and test a Gradio interface that connects all Budget Buddy features into one application.
+
+**Reflection:**  
+AI helped me plan a beginner-friendly tab-based Gradio interface for Budget Buddy. The design separated the assistant into four main tabs: CSV Spending Analysis, Finance Chatbot, RAG Financial Guidance, and Savings Goal Calculator. I chose this layout because it makes each required project component easy for a marker to test separately.
+
+During implementation, I encountered a Gradio error: `AttributeError: module 'gradio' has no attribute 'blocks'`. The app partially launched, but the notebook still showed error output and the CSV upload feature needed debugging. I used AI to understand that the issue was likely related to the Gradio package/version environment rather than my Budget Buddy functions. The fix was to add a force reinstall cell for Gradio, restart the runtime, and rerun the notebook.
+
+After fixing the issue, I tested the Gradio app again. The CSV Spending Analysis tab successfully uploaded `transactions.csv` and generated the Budget Buddy spending report. The Finance Chatbot tab also returned a response to a coffee spending question. This showed that the separate backend functions were successfully connected into one usable interface. I learned that final testing should include restarting the runtime and checking each UI tab, because a function can work individually but still fail when connected through the interface.
+
 ---
 
 ## AI Collaboration Best Practices I've Learned
