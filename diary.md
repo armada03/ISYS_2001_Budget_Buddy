@@ -110,7 +110,29 @@ The RAG system retrieves context about topics such as budgeting basics, coffee s
 
 ---
 
-### Entry 6 – Professional Error Handling
+## Entry 6 – Custom Savings Goal Tool
+
+**Artifact:**
+
+![Custom Financial Tool Prompt](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_custom_financial_tool_prompt.png)
+
+![Custom Financial Tool Logic](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_custom_financial_tool_code_logic.png)
+
+![Custom Financial Tool Considerations](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_custom_financial_tool_considerations.png)
+
+![Custom Financial Tool Code Output](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_custom_financial_tool_code_output.png)
+
+![Custom Financial Tool Output](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_custom_financial_tool_output.png)
+
+**Context:**  
+I used AI to help design and implement a custom savings goal calculator tool for Budget Buddy.
+
+**Reflection:**  
+AI helped me plan the logic for a savings calculator that takes current savings, monthly contribution and target amount, then estimates how many months are needed to reach the goal. The AI collaboration was useful because it helped identify important edge cases, such as invalid inputs, negative values, zero monthly contribution and situations where the user has already reached the savings target. I reviewed the suggested logic and implemented it as a user-friendly Budget Buddy tool. I learned that custom tools make the assistant more useful because they perform specific calculations rather than only giving general advice.
+
+---------------------------------------------------
+
+### Entry 7 – Professional Error Handling
 **Artifact:** Code snippet showing error handling for file uploads.
 
 **Context:** I needed my Gradio interface to handle bad CSV files gracefully.
