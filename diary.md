@@ -88,16 +88,25 @@ AI helped me identify that the original hands-on-ai server/model details were ou
 
 ## Advanced Integration Examples
 
-### Entry 5 – Combining Multiple AI Tools
-**Artifact:** Screenshot showing integration of hands-on-ai chat with pandas analysis.
+## Entry 5 – RAG Financial Document Retrieval
 
-**Context:** I wanted to create a chatbot that could answer questions about spending data.
+**Artifact:**
 
-**My Approach:** Used AI to help me combine CSV analysis with hands-on-ai chat functionality.
+![Budget Buddy RAG AI Prompt](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_rag_ai_prompt.png)
 
-**Key Learning:** AI helped me structure the integration, but I had to understand the business logic to make it useful. The chatbot needed to understand financial concepts, not just execute code.
+![Budget Buddy RAG Design Response](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_rag_design_response.png)
 
-**Reflection:** Integrating multiple technologies requires understanding how each piece serves the business purpose. AI can generate technical integration code, but I need to guide it toward business value.
+![Budget Buddy RAG Code](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_rag_code.png)
+
+![Budget Buddy RAG Output](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_rag_output.png)
+
+**Context:**  
+I used AI to help design and implement a simple RAG component for Budget Buddy.
+
+**Reflection:**  
+AI helped me understand how RAG could fit into my Smart Finance Assistant without making the project too complex. Instead of using a large external vector database, I used short financial guidance documents inside the notebook and retrieved the most relevant document based on the user’s question. I chose this approach because it works well in Google Colab, is beginner-friendly, and clearly connects to the Budget Buddy theme.
+
+The RAG system retrieves context about topics such as budgeting basics, coffee spending, groceries, entertainment spending, and savings goals. This retrieved context is then passed to the AI model so that the chatbot response is more focused and relevant. I learned that RAG is not just about generating an answer; it is about retrieving useful information first and using that information to improve the quality of the response.
 
 ---
 
