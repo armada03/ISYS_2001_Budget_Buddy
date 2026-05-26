@@ -72,23 +72,18 @@ I also used AI to refine the spending summary formatting by rounding currency an
 
 ---
 
-### Entry 4 – Data Quality and Edge Cases
-**Artifact:** Screenshot of debugging session with Claude about handling messy CSV data.
+### Entry 3 – Finance Chatbot Integration
+![Hands-on-AI Fixed Output](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_handsonai_fixedoutput.png)
 
-**Context:** My CSV had negative amounts (refunds) and missing values that broke my calculations.
+![Hands-on-AI Fix](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_handsonaifix.png)
 
-**My Problem:** "My spending analysis is giving wrong totals because some amounts are negative (refunds) and some cells are empty."
+![Hands-on-AI Updated API](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbudyhandsonaiupdated_api.png)
 
-**AI Solution:** Helped me add data validation:
-```python
-# Handle refunds and missing data appropriately
-df_clean = df.dropna(subset=['Amount_Clean'])
-positive_spending = df_clean[df_clean['Amount_Clean'] > 0]
-refunds = df_clean[df_clean['Amount_Clean'] < 0]
-```
+**Context:**  
+I used AI to help update the hands-on-ai configuration and create a finance-focused chatbot personality for Budget Buddy.
 
-**Reflection:** AI helped me think about real-world data issues I hadn't considered. I learned that business data is always messy and I need to ask AI specifically about edge cases like refunds, missing values, and invalid entries. This makes my finance assistant more robust for actual use.
-
+**Reflection:**  
+AI helped me identify that the original hands-on-ai server/model details were outdated. After updating the server, model and API key, the chatbot connection worked correctly. I then used AI to help design a Budget Buddy chatbot personality that gives friendly and practical budgeting advice without pretending to be a licensed financial advisor. I tested the chatbot with a coffee spending question and confirmed that it gave a useful response. I learned that AI integrations can break when external configuration changes, so it is important to test the connection and document the fix.
 ---
 
 ## Advanced Integration Examples
