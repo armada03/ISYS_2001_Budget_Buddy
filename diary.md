@@ -92,13 +92,13 @@ AI helped me identify that the original hands-on-ai server/model details were ou
 
 **Artifact:**
 
-![Budget Buddy RAG AI Prompt](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_rag_ai_prompt.png)
+![Budget Buddy RAG AI Prompt](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_ragsystem_aicollab_prompt.png)
 
-![Budget Buddy RAG Design Response](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_rag_design_response.png)
+![Budget Buddy RAG AI Collaboration 1](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_ragsystem_aicollab.png)
 
-![Budget Buddy RAG Code](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_rag_code.png)
+![Budget Buddy RAG AI Collaboration 2](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_ragsystem_aicollab_2.png)
 
-![Budget Buddy RAG Output](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_rag_output.png)
+![Budget Buddy RAG Explanation](AI-CONVERSATIONS/AI%20EVIDENCE/budgetbuddy_ragsystem_aicollab_explaination.png)
 
 **Context:**  
 I used AI to help design and implement a simple RAG component for Budget Buddy.
