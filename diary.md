@@ -167,7 +167,7 @@ During implementation, I encountered a Gradio error: `AttributeError: module 'gr
 
 This debugging process taught me that external libraries can behave differently in Google Colab depending on the installed version. I also learned that final testing should include restarting the runtime and rerunning the notebook from the top to make sure old errors are removed and the app works cleanly.
 
-## Entry 7.3 – Gradio FIX and output
+## Entry 7.2 – Gradio FIX and output
 
 **Artifact:**
 
