@@ -187,6 +187,29 @@ During implementation, I encountered a Gradio error: `AttributeError: module 'gr
 
 After fixing the issue, I tested the Gradio app again. The CSV Spending Analysis tab successfully uploaded `transactions.csv` and generated the Budget Buddy spending report. The Finance Chatbot tab also returned a response to a coffee spending question. This showed that the separate backend functions were successfully connected into one usable interface. I learned that final testing should include restarting the runtime and checking each UI tab, because a function can work individually but still fail when connected through the interface.
 
+## Entry 8 - Final Foundation Testing and Final Validation
+
+**Artifact:**
+
+![Foundation Testing Prompt](AI-CONVERSATIONS/AI%20EVIDENCE/Foundation_Prompt.png)
+
+![Testing Explanation](AI-CONVERSATIONS/AI%20EVIDENCE/Testing_Explanation.png)
+
+![Testing Output](AI-CONVERSATIONS/AI%20EVIDENCE/Testing_Output.png)
+
+![Integration Prompt](AI-CONVERSATIONS/AI%20EVIDENCE/Integration_Prompt.png)
+
+![Integration Output](AI-CONVERSATIONS/AI%20EVIDENCE/Integration_Output.png)
+
+**Context:**  
+I used AI to help design and implement Step 6 testing for Budget Buddy, including foundation function tests and advanced integration tests.
+
+**Reflection:**  
+AI helped me create test cases for normal transaction data, dollar signs in amount values, refunds, missing values, invalid dates, invalid amount values, missing required columns, spending calculations, recommendation output, and savings calculator edge cases. I reviewed the suggested tests and used `assert` statements so the notebook could prove whether the functions were working correctly.
+
+I also used AI to design integration tests that checked the full Budget Buddy workflow from loading transaction data through to generating a recommendation report. The integration tests also checked user-facing error handling for empty CSV uploads, empty chatbot questions, empty RAG questions, and invalid savings calculator inputs. This helped confirm that the individual functions worked together as one assistant, not just as separate code cells.
+
+I learned that testing is important because a function can work for one normal CSV file but still fail with messy real-world data or unusual user input. Step 6 helped me verify that Budget Buddy is more reliable and ready for final submission.
 ---
 
 ## AI Collaboration Best Practices I've Learned
