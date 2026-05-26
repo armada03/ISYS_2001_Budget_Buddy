@@ -1,4 +1,4 @@
-# Budget Buddy – Smart Finance Assistant
+# Budget Buddy – Smart Finance Assistant (Damara Arsana - 20732192)
 
 <!-- BADGES:START -->
 [![curtin](https://img.shields.io/badge/-curtin-f57c00?style=flat-square)](https://github.com/topics/curtin)
