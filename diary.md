@@ -153,7 +153,7 @@ After implementing the UI, I tested each tab to check that the separate Python f
 
 ![Gradio Debugging Evidence](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_Debugging.png)
 
-![Gradio Debugging Evidence 2](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_Debugging%202.png)
+![Gradio Debugging Evidence 2](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_Debugging_2.png)
 
 ![Gradio Reinstall Fix](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_Reinstall_Fix.png)
 
