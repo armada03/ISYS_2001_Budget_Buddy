@@ -132,23 +132,20 @@ AI helped me plan the logic for a savings calculator that takes current savings,
 
 ---------------------------------------------------
 
-### Entry 7 – Professional Error Handling
-**Artifact:** Code snippet showing error handling for file uploads.
+### Entry 7 – Gradio Setup
+**Artifact:** 
 
-**Context:** I needed my Gradio interface to handle bad CSV files gracefully.
+![Gradio AI Collaboration Prompt](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_AI_Collab.png)
 
-**AI Suggestion:** Generated try/catch blocks with business-appropriate error messages:
-```python
-try:
-    df = pd.read_csv(file.name)
-    # Analysis code...
-except FileNotFoundError:
-    return "Please upload a valid CSV file."
-except pd.errors.EmptyDataError:
-    return "The uploaded file appears to be empty. Please check your data."
-```
+![Gradio AI Collaboration Design Response](AI-CONVERSATIONS/AI%20EVIDENCE/Gradio_AI_Collab_2.png)
 
-**Reflection:** AI helped me think about user experience, not just technical functionality. Good error messages help users understand what went wrong and how to fix it. This is crucial for business applications.
+**Context:**  
+I used AI to help design a beginner-friendly Gradio interface that connects all Budget Buddy features into one application.
+
+**Reflection:**  
+AI helped me plan a tab-based Gradio interface so each feature could be tested separately by the marker. The suggested design included a CSV Spending Analysis tab, Finance Chatbot tab, RAG Financial Guidance tab, and Savings Goal Calculator tab. I chose this structure because it clearly separates each required project component and makes the assistant easier to use.
+
+After implementing the UI, I tested each tab to check that the separate Python functions worked together in one application. I also used AI to debug a Gradio launch issue and confirm that the app could run in Google Colab using a public Gradio link. I learned that building the functions first made the UI easier to connect, because each tab could call an existing tested function instead of mixing all the logic into the interface code.
 
 ---
 
