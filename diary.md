@@ -212,32 +212,51 @@ I also used AI to design integration tests that checked the full Budget Buddy wo
 I learned that testing is important because a function can work for one normal CSV file but still fail with messy real-world data or unusual user input. Step 6 helped me verify that Budget Buddy is more reliable and ready for final submission.
 ---
 
-## AI Collaboration Best Practices I've Learned
+## AI Collaboration Best Practices I Learned
 
-### 🎯 Effective Prompting Strategies
-1. **Always provide business context**: "I'm building a finance assistant for..."
-2. **Specify data structure**: "My CSV has columns X, Y, Z with these data types..."  
-3. **Request professional formatting**: "Format output for business presentation"
-4. **Ask for comments**: "Include clear comments explaining the business logic"
+### Effective Prompting Strategies
 
-### 🤔 Critique Questions I Always Ask
-- "Does this handle edge cases like negative amounts or missing data?"
-- "Are the variable names clear for a business context?"
-- "How would I explain this code to a non-technical manager?"
-- "What assumptions is this code making about my data?"
+During this project, I learned that AI gives better results when I provide clear project context. Instead of asking broad questions like “help me with pandas,” I got better answers when I explained that I was building Budget Buddy, a Smart Finance Assistant that analyses CSV transaction data.
 
-### 🔄 Iterative Improvement Process
-1. **Get basic working code** from AI
-2. **Test with real data** and find issues  
-3. **Ask AI to fix specific problems** with context
-4. **Simplify complex solutions** for maintainability
-5. **Add business-appropriate formatting** and error handling
+The most useful prompting strategies were:
 
-### 📊 Business Value Focus
-- Always connect code back to business decisions
-- Format outputs for non-technical users
-- Include actionable insights, not just data summaries
-- Consider the end user's needs and context
+- Explaining the business purpose of the feature
+- Providing the CSV structure: Date, Amount, Category and Description
+- Asking for beginner-friendly Python code suitable for Google Colab
+- Asking for business-style output that non-technical users could understand
+- Asking AI to include comments and explain the logic
+
+### How I Reviewed AI Suggestions
+
+I did not use AI responses without checking them. I reviewed the code and tested it with `transactions.csv` and additional test datasets.
+
+Some review questions I used were:
+
+- Does this handle dollar signs in the Amount column?
+- Does this handle refunds and negative values?
+- Does this handle missing or invalid data?
+- Are the variable names clear?
+- Can I explain this code in my own words?
+- Does the output help the user make a finance decision?
+
+### Iterative Improvement Process
+
+My process was:
+
+1. Ask AI for a possible solution.
+2. Add the code into the notebook.
+3. Test it with sample transaction data.
+4. Identify errors or unclear output.
+5. Ask AI to help debug or improve the code.
+6. Refine the code so it better matched Budget Buddy’s purpose.
+
+For example, I used AI to debug the Gradio interface when it produced an `AttributeError` related to the Gradio package version. I also used AI to improve the spending summary formatting by rounding currency values to two decimal places.
+
+### Business Value Focus
+
+AI helped me keep the project focused on business value, not just technical output. Budget Buddy does not only calculate totals; it turns transaction data into useful insights such as the highest spending category, spending percentages, refunds, and practical recommendations.
+
+This helped make the assistant more useful for students and young adults who want to understand their spending and improve their budgeting habits.
 
 ---
 
